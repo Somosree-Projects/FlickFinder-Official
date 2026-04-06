@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /FlickFinder/
+
+# Protect admin directory and redirect to admin index
+RewriteCond %{REQUEST_URI} ^/FlickFinder/admin/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin/(.*)$ admin/index.php [L]
+
+# Handle all other URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Basic security
+Options -Indexes
+AddDefaultCharset UTF-8
