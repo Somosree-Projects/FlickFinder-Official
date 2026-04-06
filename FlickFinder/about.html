@@ -1,0 +1,80 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FlickFinder</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Reuse the same navbar from index.html -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="about-container">
+        <section class="about-hero">
+            <h1>About FlickFinder</h1>
+            <p class="tagline">Your Ultimate Entertainment Destination</p>
+        </section>
+
+        <section class="about-content">
+            <div class="mission-section">
+                <h2>Our Mission</h2>
+                <p>At FlickFinder, we're passionate about bringing the best entertainment experience to our users. We curate and deliver high-quality content that inspires, entertains, and connects people through the power of storytelling.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-film"></i>
+                    <h3>Vast Library</h3>
+                    <p>Access thousands of movies and TV shows across different genres</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Watch Anywhere</h3>
+                    <p>Stream your favorite content on any device, anytime</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-closed-captioning"></i>
+                    <h3>Multiple Languages</h3>
+                    <p>Enjoy content in various languages with subtitles</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Secure Platform</h3>
+                    <p>Your security and privacy are our top priorities</p>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h2>Our Story</h2>
+                <p>Founded in 2024, FlickFinder has grown from a small startup to a leading streaming platform. Our team of passionate individuals works tirelessly to bring you the best entertainment experience possible.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Reuse the same footer from index.html -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="aboutus.js"></script>
+</body>
+</html>

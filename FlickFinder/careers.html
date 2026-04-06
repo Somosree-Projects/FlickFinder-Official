@@ -1,0 +1,129 @@
+<!-- careers.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="careers-container">
+        <!-- Hero Section -->
+        <section class="careers-hero">
+            <h1>Join Our Team</h1>
+            <p class="tagline">Help Us Shape the Future of Entertainment</p>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <h2>Why Choose FlickFinder?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Impact</h3>
+                    <p>Reach millions of users worldwide with innovative streaming solutions</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Latest Technology</h3>
+                    <p>Work with cutting-edge technologies and modern development practices</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Inclusive Culture</h3>
+                    <p>Join a diverse team that values creativity and collaboration</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Growth Opportunities</h3>
+                    <p>Accelerate your career with continuous learning and development</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Positions -->
+        <section class="positions-section">
+            <h2>Open Positions</h2>
+            <div class="departments-filter">
+                <button class="filter-btn active" data-department="all">All</button>
+                <button class="filter-btn" data-department="engineering">Engineering</button>
+                <button class="filter-btn" data-department="design">Design</button>
+                <button class="filter-btn" data-department="marketing">Marketing</button>
+            </div>
+            <div class="positions-grid">
+                <div class="position-card" data-department="engineering">
+                    <h3>Senior Full Stack Developer</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                    <p class="department">Engineering</p>
+                    <p class="description">Join our core team to build and scale our streaming platform.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+                <div class="position-card" data-department="design">
+                    <h3>UX/UI Designer</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco</p>
+                    <p class="department">Design</p>
+                    <p class="description">Create engaging user experiences for our streaming platform.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+                <div class="position-card" data-department="marketing">
+                    <h3>Digital Marketing Manager</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> New York</p>
+                    <p class="department">Marketing</p>
+                    <p class="description">Lead our digital marketing initiatives and growth strategies.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section class="culture-section">
+            <h2>Our Culture</h2>
+            <div class="culture-content">
+                <p>At FlickFinder, we believe in fostering an environment where creativity thrives and innovation is encouraged. Our team members are passionate about delivering the best entertainment experience to our users.</p>
+                <div class="culture-values">
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Innovation</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Passion</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="careers.js"></script>
+</body>
+</html>

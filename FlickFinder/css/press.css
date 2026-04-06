@@ -1,0 +1,455 @@
+/* press.css */
+.press-container {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.press-hero {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.press-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.press-hero .tagline {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Press Contact Section */
+.press-contact {
+    background: rgba(255,255,255,0.05);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-details i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* News Section */
+.news-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-image {
+    position: relative;
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.date-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.news-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--secondary-color);
+}
+
+/* Press Kit Section */
+.press-kit {
+    padding: 80px 20px;
+    background: rgba(255,255,255,0.02);
+}
+
+.press-kit h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.kit-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.kit-item {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.kit-item:hover {
+    transform: translateY(-5px);
+}
+
+.kit-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.kit-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.kit-item p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.download-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .press-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .press-hero .tagline {
+        font-size: 1.2rem;
+    }
+
+    .news-section h2,
+    .press-kit h2 {
+        font-size: 2rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .press-hero {
+        padding: 60px 20px;
+    }
+
+    .news-card {
+        margin: 0 10px;
+    }
+
+    .kit-item {
+        padding: 20px;
+    }
+}
+
+.mylist-container {
+    padding: 100px 50px 50px;
+    min-height: 100vh;
+    background-color: var(--dark-bg);
+}
+
+.mylist-container h1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.movies-section,
+.shows-section {
+    margin-bottom: 40px;
+}
+
+.movies-section h2,
+.shows-section h2 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.content-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+}
+
+.content-card .poster {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content-card:hover .overlay {
+    opacity: 1;
+}
+
+.watch-btn, 
+.remove-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.watch-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.watch-btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.remove-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.remove-btn:hover {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.content-info {
+    padding: 15px;
+}
+
+.content-info h3 {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating i {
+    color: #ffd700;
+}
+
+.empty-list {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--text-color);
+}
+
+.empty-list i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.empty-list p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.browse-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.browse-btn {
+    padding: 10px 25px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.browse-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mylist-container {
+        padding: 80px 20px 30px;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .content-card .poster {
+        height: 225px;
+    }
+
+    .watch-btn, 
+    .remove-btn {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mylist-container h1 {
+        font-size: 2rem;
+    }
+
+    .movies-section h2,
+    .shows-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 10px;
+    }
+
+    .content-card .poster {
+        height: 200px;
+    }
+
+    .browse-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

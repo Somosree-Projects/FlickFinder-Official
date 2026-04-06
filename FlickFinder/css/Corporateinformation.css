@@ -1,0 +1,302 @@
+/* Corporateinformation.css */
+.corporate-container {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+/* Corporate Header */
+.corporate-header {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.corporate-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.corporate-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Company Overview */
+.company-overview {
+    padding: 60px 20px;
+    background: rgba(255,255,255,0.02);
+}
+
+.overview-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overview-content h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.company-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    display: block;
+    margin: 10px 0;
+}
+
+/* Leadership Team */
+.leadership {
+    padding: 60px 20px;
+}
+
+.leadership h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leader-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+}
+
+.leader-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.leader-card h3 {
+    color: var(--accent-color);
+    margin: 20px 0 10px;
+}
+
+/* Timeline */
+.timeline {
+    padding: 60px 20px;
+    background: rgba(255,255,255,0.02);
+}
+
+.timeline h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.timeline-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    margin: 40px 0;
+    position: relative;
+}
+
+.timeline-content {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    width: calc(50% - 30px);
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+/* Corporate Responsibility */
+.responsibility {
+    padding: 60px 20px;
+}
+
+.responsibility h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.responsibility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.responsibility-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.responsibility-card:hover {
+    transform: translateY(-10px);
+}
+
+.responsibility-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Investor Relations */
+.investor-relations {
+    padding: 60px 20px;
+    background: rgba(255,255,255,0.02);
+}
+
+.investor-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.financial-highlights {
+    margin-bottom: 40px;
+}
+
+.financial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.financial-item {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.investor-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.investor-btn {
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.investor-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Corporate Contact */
+.corporate-contact {
+    padding: 60px 20px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .corporate-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .timeline-container::before {
+        left: 20px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 50px);
+        margin-left: 50px !important;
+    }
+
+    .investor-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

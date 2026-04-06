@@ -1,0 +1,146 @@
+<!-- contactus.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-container">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Our team is always here to help.</p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Visit Us</h3>
+                <p>123 Stream Street</p>
+                <p>San Francisco, CA 94105</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>Toll Free: 1-800-FLICK</p>
+                <p>International: +1 555-0123</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>support@flickfinder.com</p>
+                <p>business@flickfinder.com</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="form-container">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <div id="map">
+                    <!-- Map will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Quick Links -->
+        <section class="faq-quick-links">
+            <h2>Common Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I reset my password?</h3>
+                    <p>Click on "Forgot Password" on the login page and follow the instructions sent to your email.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I cancel my subscription?</h3>
+                    <p>Go to Account Settings > Subscription and click on "Cancel Subscription".</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Where can I view my billing history?</h3>
+                    <p>Access your billing history in Account Settings > Billing > Payment History.</p>
+                </div>
+            </div>
+            <a href="helpcenter.html" class="view-all-btn">View All FAQs</a>
+        </section>
+
+        <!-- Social Media Links -->
+        <section class="social-links">
+            <h2>Connect With Us</h2>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <i class="fas fa-check-circle"></i>
+            <h2>Message Sent!</h2>
+            <p>Thank you for contacting us. We'll get back to you soon.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="contactus.js"></script>
+</body>
+</html>

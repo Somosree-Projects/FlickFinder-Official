@@ -1,0 +1,126 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="blog-container">
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <h1>FlickFinder Blog</h1>
+            <p class="tagline">Insights, Updates, and Entertainment News</p>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="featured-content">
+                <img src="https://via.placeholder.com/800x400" alt="Featured Post">
+                <div class="featured-info">
+                    <span class="category">Featured</span>
+                    <h2>The Evolution of Streaming: What's Next for Entertainment?</h2>
+                    <p class="meta">
+                        <span><i class="fas fa-user"></i> By Admin</span>
+                        <span><i class="fas fa-calendar"></i> December 30, 2024</span>
+                        <span><i class="fas fa-comments"></i> 15 Comments</span>
+                    </p>
+                    <p class="excerpt">Explore the future of streaming entertainment and how technology is shaping the way we consume content...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="industry">Industry News</button>
+                <button class="category-btn" data-category="reviews">Reviews</button>
+                <button class="category-btn" data-category="tech">Technology</button>
+                <button class="category-btn" data-category="entertainment">Entertainment</button>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-grid">
+            <div class="posts-container">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+            <div class="loading-spinner" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <div class="search-widget">
+                <h3>Search Posts</h3>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="popular-posts">
+                <h3>Popular Posts</h3>
+                <div class="popular-list">
+                    <!-- Popular posts will be dynamically loaded -->
+                </div>
+            </div>
+
+            <div class="tags-widget">
+                <h3>Popular Tags</h3>
+                <div class="tags-cloud">
+                    <a href="#" class="tag">Streaming</a>
+                    <a href="#" class="tag">Movies</a>
+                    <a href="#" class="tag">TV Shows</a>
+                    <a href="#" class="tag">Technology</a>
+                    <a href="#" class="tag">Entertainment</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates and insights delivered to your inbox</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="blog.js"></script>
+</body>
+</html>

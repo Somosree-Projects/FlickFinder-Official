@@ -1,0 +1,155 @@
+<!-- Cookiespreferences.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Preferences - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Cookiespreferences.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="cookies-container">
+        <!-- Cookies Header -->
+        <section class="cookies-header">
+            <h1>Cookie Preferences</h1>
+            <p>Manage how FlickFinder uses cookies to improve your experience</p>
+        </section>
+
+        <!-- Cookie Settings -->
+        <section class="cookie-settings">
+            <div class="settings-wrapper">
+                <!-- Essential Cookies -->
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <h2>Essential Cookies</h2>
+                        <label class="switch">
+                            <input type="checkbox" checked disabled>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>These cookies are necessary for the website to function and cannot be switched off.</p>
+                    <div class="cookie-details">
+                        <ul>
+                            <li>Authentication and security</li>
+                            <li>Basic site functionality</li>
+                            <li>Account settings</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Performance Cookies -->
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <h2>Performance Cookies</h2>
+                        <label class="switch">
+                            <input type="checkbox" id="performanceCookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>These cookies help us improve our website by collecting information about how you use it.</p>
+                    <div class="cookie-details">
+                        <ul>
+                            <li>Analytics and statistics</li>
+                            <li>Site performance monitoring</li>
+                            <li>Error reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Functional Cookies -->
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <h2>Functional Cookies</h2>
+                        <label class="switch">
+                            <input type="checkbox" id="functionalCookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>These cookies enable personalized features and functionality.</p>
+                    <div class="cookie-details">
+                        <ul>
+                            <li>Remembering preferences</li>
+                            <li>Customization settings</li>
+                            <li>Language preferences</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Marketing Cookies -->
+                <div class="cookie-category">
+                    <div class="category-header">
+                        <h2>Marketing Cookies</h2>
+                        <label class="switch">
+                            <input type="checkbox" id="marketingCookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <p>These cookies are used to deliver relevant advertisements and track their effectiveness.</p>
+                    <div class="cookie-details">
+                        <ul>
+                            <li>Personalized advertisements</li>
+                            <li>Ad performance tracking</li>
+                            <li>Marketing analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save Preferences -->
+            <div class="save-preferences">
+                <button id="savePreferences" class="save-btn">Save Preferences</button>
+                <button id="acceptAll" class="accept-all-btn">Accept All Cookies</button>
+            </div>
+        </section>
+
+        <!-- Cookie Information -->
+        <section class="cookie-info">
+            <h2>About Our Cookies</h2>
+            <div class="info-content">
+                <p>Cookies are small text files that are placed on your device to help the site provide a better user experience. In general, cookies are used to retain user preferences, store information for things like shopping carts, and provide anonymized tracking data to third party applications like Google Analytics.</p>
+                <div class="info-links">
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="TermsofService.html">Terms of Service</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cookie Preferences Saved Modal -->
+    <div id="preferencesModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Preferences Saved</h2>
+            <p>Your cookie preferences have been updated successfully.</p>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="Cookiespreferences.js"></script>
+</body>
+</html>

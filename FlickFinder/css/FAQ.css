@@ -1,0 +1,316 @@
+/* FAQ.css */
+.faq-container {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.faq-hero {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.faq-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.search-box {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.search-box button {
+    padding: 0 25px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Categories Section */
+.faq-categories {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 12px 25px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* FAQ Content */
+.faq-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.faq-item {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-item.active .faq-answer {
+    padding: 20px;
+    max-height: 500px;
+}
+
+/* Need Help Section */
+.need-help {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255,255,255,0.02);
+}
+
+.need-help h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.help-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.help-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.help-option:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.1);
+}
+
+.help-option i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Community Section */
+.community-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.community-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.community-links {
+    margin-top: 30px;
+}
+
+.community-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.community-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+}
+
+/* Chat Modal */
+.modal {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 350px;
+    background: var(--dark-bg);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.chat-container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 15px;
+    background: var(--primary-color);
+    border-radius: 15px 15px 0 0;
+    color: white;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.chat-input button {
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .category-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .modal {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}

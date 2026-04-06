@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.auth-container {
+    background-color: #1a0f0f;  /* Updated background color */
+    max-width: 380px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 68, 35, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(40, 40, 40, 0.5);
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4423;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #ff4423;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.error {
+    color: #ff4423;
+    text-align: center;
+    font-size: 14px;
+}

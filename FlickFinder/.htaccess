@@ -1,0 +1,13 @@
+# Place this in your root directory
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Content-Security-Policy "frame-ancestors 'self' https://drive.google.com"
+</IfModule>
+
+# Prevent direct access to video files
+<FilesMatch "\.(mp4|mkv|avi|mov)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

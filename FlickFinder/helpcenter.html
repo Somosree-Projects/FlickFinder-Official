@@ -1,0 +1,144 @@
+<!-- helpcenter.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/helpcenter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="help-container">
+        <!-- Help Center Hero -->
+        <section class="help-hero">
+            <h1>How can we help you?</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Search for help...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="quick-links">
+            <div class="quick-link-card">
+                <i class="fas fa-play-circle"></i>
+                <h3>Getting Started</h3>
+                <p>New to FlickFinder? Start here</p>
+            </div>
+            <div class="quick-link-card">
+                <i class="fas fa-credit-card"></i>
+                <h3>Billing</h3>
+                <p>Manage your subscription</p>
+            </div>
+            <div class="quick-link-card">
+                <i class="fas fa-cog"></i>
+                <h3>Account Settings</h3>
+                <p>Update your preferences</p>
+            </div>
+            <div class="quick-link-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security</h3>
+                <p>Keep your account safe</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-categories">
+                <button class="category-btn active" data-category="general">General</button>
+                <button class="category-btn" data-category="technical">Technical</button>
+                <button class="category-btn" data-category="billing">Billing</button>
+                <button class="category-btn" data-category="content">Content</button>
+            </div>
+            <div class="faq-container">
+                <!-- FAQs will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Contact Support -->
+        <section class="contact-support">
+            <h2>Still Need Help?</h2>
+            <div class="support-options">
+                <div class="support-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team</p>
+                    <button class="support-btn">Start Chat</button>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Support</h3>
+                    <p>Get help via email</p>
+                    <button class="support-btn">Send Email</button>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone Support</h3>
+                    <p>Call our support team</p>
+                    <button class="support-btn">Call Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="community-section">
+            <h2>Community Forum</h2>
+            <p>Join our community to get help from other users</p>
+            <button class="community-btn">Visit Forum</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Footer content from index.html -->
+        </div>
+    </footer>
+
+    <!-- Chat Modal -->
+    <div id="chatModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>Live Support Chat</h3>
+                </div>
+                <div class="chat-messages">
+                    <!-- Messages will be loaded here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="helpcenter.js"></script>
+</body>
+</html>

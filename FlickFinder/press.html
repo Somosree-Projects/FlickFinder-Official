@@ -1,0 +1,125 @@
+<!-- press.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press & News - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/press.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="press-container">
+        <!-- Press Hero Section -->
+        <section class="press-hero">
+            <h1>Press & Media Center</h1>
+            <p class="tagline">Latest News and Updates from FlickFinder</p>
+        </section>
+
+        <!-- Press Contact Section -->
+        <section class="press-contact">
+            <div class="contact-info">
+                <h2>Media Inquiries</h2>
+                <p>For press inquiries, please contact:</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> press@flickfinder.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="news-section">
+            <h2>Latest News</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250" alt="News 1">
+                        <span class="date-badge">Dec 30, 2024</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>FlickFinder Launches New AI-Powered Recommendations</h3>
+                        <p>Revolutionizing the way users discover content with advanced machine learning algorithms.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250" alt="News 2">
+                        <span class="date-badge">Dec 25, 2024</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Global Expansion: FlickFinder Enters Asian Markets</h3>
+                        <p>Strategic expansion brings premium streaming content to millions of new viewers.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x250" alt="News 3">
+                        <span class="date-badge">Dec 20, 2024</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>FlickFinder Original Series Wins Emmy Award</h3>
+                        <p>Our commitment to quality content recognized with prestigious industry award.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Press Kit Section -->
+        <section class="press-kit">
+            <h2>Press Kit</h2>
+            <div class="kit-content">
+                <div class="kit-item">
+                    <i class="fas fa-images"></i>
+                    <h3>Brand Assets</h3>
+                    <p>Download official logos, icons, and brand guidelines</p>
+                    <button class="download-btn">Download</button>
+                </div>
+                <div class="kit-item">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Fact Sheet</h3>
+                    <p>Company information, statistics, and milestones</p>
+                    <button class="download-btn">Download</button>
+                </div>
+                <div class="kit-item">
+                    <i class="fas fa-camera"></i>
+                    <h3>Media Gallery</h3>
+                    <p>High-resolution images and promotional materials</p>
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="press.js"></script>
+</body>
+</html>

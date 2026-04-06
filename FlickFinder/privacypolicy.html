@@ -1,0 +1,178 @@
+<!-- privacypolicy.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/privacypolicy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="privacy-container">
+        <!-- Privacy Policy Header -->
+        <section class="privacy-header">
+            <h1>Privacy Policy</h1>
+            <p>Last Updated: January 1, 2025</p>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section class="quick-nav">
+            <div class="nav-wrapper">
+                <button class="nav-item active" data-section="collection">Information Collection</button>
+                <button class="nav-item" data-section="usage">Information Usage</button>
+                <button class="nav-item" data-section="sharing">Information Sharing</button>
+                <button class="nav-item" data-section="security">Data Security</button>
+                <button class="nav-item" data-section="rights">Your Rights</button>
+                <button class="nav-item" data-section="cookies">Cookies Policy</button>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="privacy-content">
+            <div id="collection" class="content-section active">
+                <h2>Information Collection</h2>
+                <div class="info-card">
+                    <h3>Personal Information</h3>
+                    <p>We collect information that you provide directly to us, including:</p>
+                    <ul>
+                        <li>Name and contact information</li>
+                        <li>Account credentials</li>
+                        <li>Payment information</li>
+                        <li>Viewing preferences and history</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Automatically Collected Information</h3>
+                    <p>We automatically collect certain information when you use our service:</p>
+                    <ul>
+                        <li>Device information</li>
+                        <li>Usage data</li>
+                        <li>IP address</li>
+                        <li>Browser type</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="usage" class="content-section">
+                <h2>Information Usage</h2>
+                <div class="info-card">
+                    <h3>How We Use Your Information</h3>
+                    <ul>
+                        <li>Provide and improve our services</li>
+                        <li>Personalize your experience</li>
+                        <li>Process payments</li>
+                        <li>Send notifications and updates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="sharing" class="content-section">
+                <h2>Information Sharing</h2>
+                <div class="info-card">
+                    <h3>Third-Party Sharing</h3>
+                    <p>We may share your information with:</p>
+                    <ul>
+                        <li>Service providers</li>
+                        <li>Payment processors</li>
+                        <li>Analytics partners</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="security" class="content-section">
+                <h2>Data Security</h2>
+                <div class="info-card">
+                    <h3>Security Measures</h3>
+                    <p>We implement appropriate security measures to protect your information:</p>
+                    <ul>
+                        <li>Encryption of sensitive data</li>
+                        <li>Regular security assessments</li>
+                        <li>Access controls</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="rights" class="content-section">
+                <h2>Your Rights</h2>
+                <div class="info-card">
+                    <h3>Your Privacy Rights</h3>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Access your personal information</li>
+                        <li>Request data correction</li>
+                        <li>Request data deletion</li>
+                        <li>Opt-out of marketing communications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="cookies" class="content-section">
+                <h2>Cookies Policy</h2>
+                <div class="info-card">
+                    <h3>Cookie Usage</h3>
+                    <p>We use cookies to:</p>
+                    <ul>
+                        <li>Remember your preferences</li>
+                        <li>Analyze site traffic</li>
+                        <li>Personalize content</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="privacy-contact">
+            <h2>Privacy Questions?</h2>
+            <p>If you have any questions about our Privacy Policy, please contact us:</p>
+            <div class="contact-options">
+                <a href="mailto:privacy@flickfinder.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    Email Us
+                </a>
+                <a href="contactus.html" class="contact-btn">
+                    <i class="fas fa-phone"></i>
+                    Contact Support
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-banner">
+        <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="acceptCookies" class="accept-btn">Accept</button>
+            <button id="customizeCookies" class="customize-btn">Customize</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="privacypolicy.js"></script>
+</body>
+</html>

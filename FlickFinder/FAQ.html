@@ -1,0 +1,120 @@
+<!-- FAQ.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="faq-container">
+        <!-- FAQ Hero Section -->
+        <section class="faq-hero">
+            <h1>Frequently Asked Questions</h1>
+            <div class="search-box">
+                <input type="text" id="faqSearch" placeholder="Search FAQs...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="faq-categories">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Questions</button>
+                <button class="category-btn" data-category="account">Account & Billing</button>
+                <button class="category-btn" data-category="streaming">Streaming & Playback</button>
+                <button class="category-btn" data-category="content">Content & Features</button>
+                <button class="category-btn" data-category="technical">Technical Issues</button>
+            </div>
+        </section>
+
+        <!-- FAQ Content -->
+        <section class="faq-content">
+            <div class="faq-list">
+                <!-- FAQs will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Still Need Help -->
+        <section class="need-help">
+            <h2>Still Need Help?</h2>
+            <p>Can't find what you're looking for? We're here to help.</p>
+            <div class="help-options">
+                <a href="contactus.html" class="help-option">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Support</span>
+                </a>
+                <a href="#" class="help-option" id="liveChatBtn">
+                    <i class="fas fa-comments"></i>
+                    <span>Live Chat</span>
+                </a>
+                <a href="helpcenter.html" class="help-option">
+                    <i class="fas fa-book"></i>
+                    <span>Help Center</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="community-section">
+            <h2>Join Our Community</h2>
+            <p>Connect with other users and share your experiences</p>
+            <div class="community-links">
+                <a href="#" class="community-btn">Visit Forum</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-reddit"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Live Chat Modal -->
+    <div id="chatModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>Live Support</h3>
+                </div>
+                <div class="chat-messages">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="FAQ.js"></script>
+</body>
+</html>

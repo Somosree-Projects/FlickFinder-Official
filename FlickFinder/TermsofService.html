@@ -1,0 +1,171 @@
+<!-- TermsofService.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - FlickFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/TermsofService.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FlickFinder</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Movies.php" >Movies</a>
+            <a href="tvshows.php">TV Shows</a>
+            <a href="mylist.php">My List</a>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="terms-container">
+        <!-- Terms Header -->
+        <section class="terms-header">
+            <h1>Terms of Service</h1>
+            <p>Last Updated: January 1, 2025</p>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section class="terms-nav">
+            <div class="nav-wrapper">
+                <button class="nav-item active" data-section="acceptance">Acceptance</button>
+                <button class="nav-item" data-section="services">Services</button>
+                <button class="nav-item" data-section="accounts">Accounts</button>
+                <button class="nav-item" data-section="billing">Billing</button>
+                <button class="nav-item" data-section="content">Content</button>
+                <button class="nav-item" data-section="restrictions">Restrictions</button>
+            </div>
+        </section>
+
+        <!-- Terms Content -->
+        <section class="terms-content">
+            <div id="acceptance" class="content-section active">
+                <h2>Acceptance of Terms</h2>
+                <div class="terms-card">
+                    <p>By accessing and using FlickFinder's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
+                    <div class="highlight-box">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>These terms constitute a legally binding agreement between you and FlickFinder.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services" class="content-section">
+                <h2>Services Description</h2>
+                <div class="terms-card">
+                    <h3>Streaming Services</h3>
+                    <ul>
+                        <li>Access to movies and TV shows</li>
+                        <li>HD and 4K streaming options</li>
+                        <li>Multiple device support</li>
+                        <li>Personalized recommendations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="accounts" class="content-section">
+                <h2>Account Terms</h2>
+                <div class="terms-card">
+                    <h3>Account Responsibilities</h3>
+                    <ul>
+                        <li>Maintain accurate account information</li>
+                        <li>Protect account credentials</li>
+                        <li>Report unauthorized access</li>
+                        <li>One account per user</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="billing" class="content-section">
+                <h2>Billing and Payments</h2>
+                <div class="terms-card">
+                    <h3>Payment Terms</h3>
+                    <ul>
+                        <li>Subscription fees and billing cycles</li>
+                        <li>Payment methods accepted</li>
+                        <li>Cancellation policies</li>
+                        <li>Refund conditions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content" class="content-section">
+                <h2>Content Usage</h2>
+                <div class="terms-card">
+                    <h3>Content Rights</h3>
+                    <ul>
+                        <li>Viewing rights and limitations</li>
+                        <li>Copyright restrictions</li>
+                        <li>Content availability</li>
+                        <li>Geographic restrictions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="restrictions" class="content-section">
+                <h2>Usage Restrictions</h2>
+                <div class="terms-card">
+                    <h3>Prohibited Activities</h3>
+                    <ul>
+                        <li>Account sharing limitations</li>
+                        <li>Content redistribution</li>
+                        <li>Platform manipulation</li>
+                        <li>Violation consequences</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agreement Section -->
+        <section class="agreement-section">
+            <div class="agreement-box">
+                <h3>Agreement to Terms</h3>
+                <p>By using FlickFinder, you acknowledge that you have read and understand these Terms of Service and agree to be bound by them.</p>
+                <div class="agreement-buttons">
+                    <button id="acceptTerms" class="accept-btn">I Accept</button>
+                    <button id="declineTerms" class="decline-btn">I Decline</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="terms-contact">
+            <h2>Questions About Terms?</h2>
+            <p>If you have any questions about our Terms of Service, please contact us:</p>
+            <div class="contact-options">
+                <a href="mailto:legal@flickfinder.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    Email Legal Team
+                </a>
+                <a href="contactus.html" class="contact-btn">
+                    <i class="fas fa-phone"></i>
+                    Contact Support
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Print Version Notice -->
+    <div class="print-notice">
+        <p>Printed version of FlickFinder Terms of Service</p>
+        <p>Date: January 1, 2025</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FlickFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+    <script src="TermsofService.js"></script>
+</body>
+</html>
